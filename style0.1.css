@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b1d1de;
+    margin: 0;
+    padding: 40px 20px;
+    color:rgb(87, 22, 148)
+}
+.poll-header {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 35px auto;
+}
+.rank-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(4px);
+    color: #facc15;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+.image-box {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+/* Khung chứa 3 sản phẩm */
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 28px;
+}
+
+/* Mỗi product card */
+.product {
+    width: 280px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 16px;
+
+    padding: 16px;
+
+    text-align: center;
+
+    /* Biến card thành flex dọc để đẩy nút xuống đáy */
+    display: flex;
+    flex-direction: column;
+
+   
+}
+
+.product img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+
+.product h2 {
+    color: #1e293b;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.4;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.description {
+    color: #64748b;
+    font-size: 13.5px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.button {
+    background-color: #0066cc;
+    width: 100%;
+    color: white;
+    border: none;
+    font-size: 14px;
+    padding: 11px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: center;
+    margin-top: auto;
+}
+
+.button:hover {
+    background-color: #004c99;
+}
+.vote-btn {
+    width: 100%;
+    background-color: #f8fafc;
+    border: 1.5px solid #e2e8f0;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.vote-btn:hover {
+    background-color: #fee2e2;
+    border-color: #fca5a5;
+    color: #dc2626;
+}
+
+.vote-btn.voted {
+    background-color: #ef4444;
+    border-color: #ef4444;
+    color: #ffffff;
+}
